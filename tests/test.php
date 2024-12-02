@@ -48,7 +48,7 @@ echo "\nTest Case 1: B01, G01\n";
 $basket->add('B01');
 $basket->add('G01');
 $calculate = $basket->total();
-echo "Total (B01, G01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n"; // Output: $37.85
+echo "Total (B01, G01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n";
 
 // Test Case 2: R01, R01
 echo "\nTest Case 2: R01, R01\n";
@@ -56,7 +56,7 @@ $basket = new Basket($db, $offer, $deliveryCharges);
 $basket->add('R01');
 $basket->add('R01');
 $calculate = $basket->total();
-echo "Total (R01, R01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n"; // Output: $54.37
+echo "Total (R01, R01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n";
 
 // Test Case 3: R01, G01
 echo "\nTest Case 3: R01, G01\n";
@@ -64,7 +64,7 @@ $basket = new Basket($db, $offer, $deliveryCharges);
 $basket->add('R01');
 $basket->add('G01');
 $calculate = $basket->total();
-echo "Total (R01, G01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n"; // Output: $60.85
+echo "Total (R01, G01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] . "\n";
 
 // Test Case 4: B01, B01, R01, R01, R01
 echo "\nTest Case 4: B01, B01, R01, R01, R01\n";
@@ -75,4 +75,4 @@ $basket->add('R01');
 $basket->add('R01');
 $basket->add('R01');
 $calculate = $basket->total();
-echo "Total (B01, B01, R01, R01, R01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] .  "\n"; // Output: $98.27
+echo "Total (B01, B01, R01, R01, R01): $" . $calculate[0]. " + $" .$calculate[1]. " = $" .$calculate[2] .  "\n";

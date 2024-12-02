@@ -45,7 +45,10 @@ This PHP application implements a basket system with the following features:
 ## Class Breakdown
 * **Product Class** (`src/Product.php`): Defines product attributes (code, name, price). 
 * **Database Class** (`src/Database.php`): Manages MySQL connection and retrieves products from the database.
-* **Offer Class** (src/Offer.php): Implements logic for applying special offers.
+* **Offer Class** (src/Offer.php): The `Offer` class handles special offers for products in the shopping basket. 
+  * If the product code matches the offer, it calculates the total cost of the items, applying the "Buy one, get one half price" offer:
+    * For every two items purchased, the second item is charged at half price.
+    * If there is an odd number of items, the remaining item is charged at the full price.
 * **DeliveryCharges** Class (src/DeliveryCharges.php): Calculates delivery charges based on basket total.
 * **Basket Class** (src/Basket.php): Handles the shopping basket, including adding products and calculating the final total.
   
